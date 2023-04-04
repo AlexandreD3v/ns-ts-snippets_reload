@@ -248,6 +248,31 @@
     ],
     "description": "portlet"
   },
+  "portletAnnotation": {
+    "prefix": "portletAnnotation",
+    "body": [
+      "/**",
+      " * @copyright © 2022, Oracle and/or its affiliates. All rights reserved.",
+      " *",
+      " * @NApiVersion 2.x",
+      " * @NModuleScope Public",
+      " * @NScriptType Portlet",
+      " */",
+      "",
+    ],
+    "description": "portletAnnotation"
+  },
+  "render": {
+    "prefix": "render",
+    "body": [
+      "",
+      "import { EntryPoints } from \"N/types\";",
+      "",
+      "export function render(context: EntryPoints.Portlet.renderContext): void {}",
+      ""
+    ],
+    "description": "render"
+  },
   "schedule": {
     "prefix": "schedule",
     "body": [
@@ -266,6 +291,31 @@
     ],
     "description": "schedule"
   },
+  "scheduleAnnotation": {
+    "prefix": "scheduleAnnotation",
+    "body": [
+      "/**",
+      " * @copyright © 2022, Oracle and/or its affiliates. All rights reserved.",
+      " *",
+      " * @NApiVersion 2.x",
+      " * @NModuleScope Public",
+      " * @NScriptType ScheduledScript",
+      " */",
+      "",
+    ],
+    "description": "scheduleAnnotation"
+  },
+  "execute": {
+    "prefix": "execute",
+    "body": [
+      "",
+      "import { EntryPoints } from \"N/types\";",
+      "",
+      "export function execute(context: EntryPoints.Scheduled.executeContext): void {}",
+      ""
+    ],
+    "description": "execute"
+  },
   "suitelet": {
     "prefix": "suitelet",
     "body": [
@@ -283,6 +333,27 @@
       ""
     ],
     "description": "suitelet"
+  },
+  "suiteletAnnotation": {
+    "prefix": "suiteletAnnotation",
+    "body": [
+      "/**",
+      " * @copyright © 2022, Oracle and/or its affiliates. All rights reserved.",
+      " *",
+      " * @NApiVersion 2.x",
+      " * @NModuleScope Public",
+      " * @NScriptType Suitelet",
+      " */",
+      ""
+    ],
+    "description": "suiteletAnnotation"
+  },
+  "onRequest": {
+    "prefix": "onRequest",
+    "body": [
+      "export function onRequest(context: EntryPoints.Suitelet.onRequestContext): void {}"
+    ],
+    "description": "onRequest"
   },
   "sdfinstallationscript": {
     "prefix": "sdfinstallationscript",
