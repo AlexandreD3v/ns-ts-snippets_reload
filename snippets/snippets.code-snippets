@@ -411,61 +411,79 @@
     ],
     "description": "it"
   },
-  "nLog": {
-    "prefix": "nLog",
+  "nSearch": {
+    "prefix": "nSearch",
     "body": [
-      "import * as log from \"N/log\";",
+      "import * as search from \"N/search\"",
       "",
-      "log.error({title:\"\",details:\"\"})",
-      "log.audit({title:\"\",details:\"\"})",
-      "log.debug({title:\"\",details:\"\"})",
-      "log.emergency({title:\"\",details:\"\"})",
+      "search.create({",
+      "          type:\"\",",
+      "          columns:[",
+      "                    search.createColumn({",
+      "                    name:,",
+      "                    formula:,",
+      "                    function:,",
+      "                    join:,",
+      "                    label:,",
+      "                    sort:,",
+      "                    summary:",
+      "                    }),",
+      "          ],",
+      "          filters:[",
+      "                    search.createFilter({",
+      "                    name:,",
+      "                    operator:,",
+      "                    formula:,",
+      "                    join:,",
+      "                    summary:,",
+      "                    values:",
+      "                    })",
+      "          ],",
+      "          filterExpression:[\"\"],",
+      "          id:\"\",",
+      "          isPublic:,",
+      "          packageId:\"\",",
+      "          settings:[\"\"],",
+      "          title:\"\"",
+      "});",
+      "",
+      "searchObj.run().each(function (obj){",
+      "          //TODO logic",
+      "          return true;",
+      "})",
       "",
     ],
-    "description": "nLog"
+    "description": "nSearch"
   },
-  "nLogImport": {
-    "prefix": "nLogImport",
+  "nSearchImport": {
+    "prefix": "nSearchImport",
     "body": [
-      "import * as log from \"N/log\";",
+      "import * as search from \"N/search\"",
       "",
     ],
-    "description": "nLogImport"
+    "description": "nSearchImport"
   },
-  "nLogError": {
-    "prefix": "nLogError",
+  "nSearchCreate": {
+    "prefix": "nSearchCreate",
     "body": [
       "",
-      "log.error({title:\"\",details:\"\"})",
+      "let searchObj = search.create({",
+      "          type:\"\",",
+      "          columns:[\"\"],",
+      "          filters:[\"\"],",
+      "          filterExpression:[\"\"],",
+      "          id:\"\",",
+      "          isPublic:,",
+      "          packageId:\"\",",
+      "          settings:[\"\"],",
+      "          title:\"\"",
+      "});",
       "",
+      "searchObj.run().each(function (obj){",
+      "          //TODO logic",
+      "          return true;",
+      "})",
     ],
-    "description": "nLogError"
-  },
-  "nLogAudit": {
-    "prefix": "nLogAudit",
-    "body": [
-      "",
-      "log.audit({title:\"\",details:\"\"})",
-      "",
-    ],
-    "description": "nLogAudit"
-  },
-  "nLogDebug": {
-    "prefix": "nLogDebug",
-    "body": [
-      "",
-      "log.debug({title:\"\",details:\"\"})",
-      "",
-    ],
-    "description": "nLogDebug"
-  },
-  "nLogemergency": {
-    "prefix": "nLogemergency",
-    "body": [
-      "",
-      "log.emergency({title:\"\",details:\"\"})",
-      "",
-    ],
-    "description": "nLogemergency"
+    "description": "nSearchCreate"
   },
 }
