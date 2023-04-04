@@ -410,5 +410,62 @@
       "});"
     ],
     "description": "it"
-  }
+  },
+  "nLog": {
+    "prefix": "nLog",
+    "body": [
+      "import * as log from \"N/log\";",
+      "",
+      "log.error({title:\"\",details:\"\"})",
+      "log.audit({title:\"\",details:\"\"})",
+      "log.debug({title:\"\",details:\"\"})",
+      "log.emergency({title:\"\",details:\"\"})",
+      "",
+    ],
+    "description": "nLog"
+  },
+  "nLogImport": {
+    "prefix": "nLogImport",
+    "body": [
+      "import * as log from \"N/log\";",
+      "",
+    ],
+    "description": "nLogImport"
+  },
+  "nLogError": {
+    "prefix": "nLogError",
+    "body": [
+      "",
+      "log.error({title:\"\",details:\"\"})",
+      "",
+    ],
+    "description": "nLogError"
+  },
+  "nLogAudit": {
+    "prefix": "nLogAudit",
+    "body": [
+      "",
+      "log.audit({title:\"\",details:\"\"})",
+      "",
+    ],
+    "description": "nLogAudit"
+  },
+  "nLogDebug": {
+    "prefix": "nLogDebug",
+    "body": [
+      "",
+      "log.debug({title:\"\",details:\"\"})",
+      "",
+    ],
+    "description": "nLogDebug"
+  },
+  "nLogemergency": {
+    "prefix": "nLogemergency",
+    "body": [
+      "",
+      "log.emergency({title:\"\",details:\"\"})",
+      "",
+    ],
+    "description": "nLogemergency"
+  },
 }
