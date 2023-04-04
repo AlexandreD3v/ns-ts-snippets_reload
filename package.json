@@ -1,0 +1,29 @@
+{
+    "name": "netsuite-ts-snippets",
+    "displayName": "Netsuite TS Snippets",
+    "publisher": "AlexandreWeberDalabona",
+    "description": "This extension contains code snippets for Netsuite SuiteApps developed with TypeScript",
+    "version": "0.0.7",
+    "engines": {
+        "vscode": "^1.62.0"
+    },
+    "repository": {
+        "url": "https://github.com/AlexandreWeber/netsuite-ts-snippets",
+        "type": "git"
+    },
+    "icon": "icon.png",
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "typescript",
+                "path": "./snippets/snippets.code-snippets"
+            }
+        ]
+    },
+    "dependencies": {
+        "vsce": "^2.2.0"
+    }
+}
